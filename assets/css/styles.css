@@ -1606,6 +1606,45 @@
       /* Fin apartado */
   }
 
+  /* ========================================= */
+      /* MENÚ HAMBURGUESA PARA TABLETS Y CELULARES */
+      /* ========================================= */
+      
+      .nav-menu-toggle {
+        display: block; /* Muestra el icono hamburguesa */
+      }
+
+      .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 240px;
+        background-color: var(--Color10);
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-12px);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .nav-menu-link {
+        border-radius: 8px;
+        padding: 12px;
+        border-bottom: 1px solid var(--Color2);
+        text-align: center; /* Centramos el texto del menú */
+      }
+
+      .nav-menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
   /* -------------------------------------------------------------- */
   /* DISEÑO RESPONSIVE PARA TABLET (POSICIÓN VERTICAL)*/
   /* -------------------------------------------------------------- */
@@ -1668,6 +1707,10 @@
 
     .banner-text p {
       font-size: 16px;
+    }
+
+    .btn_banner {
+      display: none; /* Esto desaparece el botón en pantallas de 768px o menos */
     }
     /* Fin apartado */
 
@@ -1904,42 +1947,7 @@
     }
     /* Fin apartado */
 
-    /* Botón hamburguesa */
-    .nav-menu {
-      flex-direction: column; /* Los elementos del menú se apilan en columna */
-      position: absolute; /* Posicionamiento del menú */
-      top: 70px;
-      text-align: center;
-      right: 35px;
-      width: 240px;
-      background-color: var(--Color10);
-      padding: 1rem;
-      border-radius: 12px;
-      box-shadow: 0px 8px 24px var(--Color6);
-      z-index: 1000; /* Coloca el menú encima de los demás elementos */
-
-      /* Ocultamos el menú por defecto  */
-      opacity: 0; /* Inicialmente transparente */
-      visibility: hidden; /* Inicialmente oculto */
-      transform: translateY(-12px); /* Lo desplaza ligeramente hacia arriba */
-      transition: all 0.3s ease-in-out; /* Transición suave para mostrar/ocultar el menú */
-    }
-
-    .nav-menu-link {
-      border-radius: 8px;
-      padding: 12px;
-      border-bottom: 1px solid var(--Color2);
-    }
-
-    /* Hace visible el botón hamburguesa */
-    .nav-menu.active {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-    /* Fin apartado */
   }
-  
   /* --------------------------------------------------- */
   /* DISEÑO RESPONSIVO PARA CELULAR (POSICIÓN VERTICAL) */
   /* -------------------------------------------------- */
