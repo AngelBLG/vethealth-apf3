@@ -886,6 +886,7 @@
   /* **************** */
 
   #banner {
+    position: relative;
     overflow: hidden;
     /* A lo de arriba (^)
     Evita que, al hacer zoom, las partes excedentes de la imagen
