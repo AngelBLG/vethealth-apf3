@@ -1402,6 +1402,7 @@
       /* Apartado: Banner */
       .banner-text {
         width: 70%;
+        top: 50%;
       }
 
       .banner-text h1 {
@@ -1631,6 +1632,9 @@
         visibility: hidden;
         transform: translateY(-12px);
         transition: all 0.3s ease-in-out;
+
+        max-height: 75vh;
+        overflow-y: auto;
       }
 
       .nav-menu-link {
