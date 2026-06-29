@@ -1,0 +1,2212 @@
+  /* Declarar variables CSS */
+  /* Bloque de colores */
+  :root {
+    /* Paleta de colores */
+    --Color1: #000000;
+    --Color2: #444444;
+    --Color3: #702F8A;
+    --Color4: #FFFFFF;
+    --Color5: #6A6A6A;
+    --Color6: #333333;
+    --Color7: #F5F5F5;
+    --Color8: #7A7A7A;
+    --Color9: #07A74B;
+    --Color10: #FAFAFA;
+    --Color11: #F9F9F9;
+    --Color12: #F50057;
+    --Color13: #555555;
+    --color14: #2173E8;
+    --color15: #FF5722;
+    --color16: #E91E63;
+    --color17: #00A040;
+    --color18: #FFB300;
+    --color19: #03A9F4;
+    --color20: #702F8A;
+    --color21: #b082c2;
+    /* Tipografias */
+    --fuente1: "Poppins", sans-serif;
+    --fuente2: "Roboto", sans-serif;
+
+    /* Interlineado */
+    --spacing: 1.8;
+  }
+
+  /* Selector Universal de elementos */
+  * {
+    /* Elimina los espacios predeterminados */
+    margin: 0;
+    padding: 0;
+
+    /* Evita que un contenedor cambie de tamaño al agregar espacios */
+    box-sizing: border-box;
+  }
+
+
+  /* ------------------------------- */
+  /* SELECTORES DE TIPO ID */
+  /* ------------------------------- */
+
+  #header {
+    background-color: var(--Color4);
+    color: var(--Color1);
+    box-shadow: 0 0 3px 0 var(--Color2);
+  }
+
+  #footer {
+    background-color: var(--Color7);
+    /* Color de fondo del footer */
+    color: var(--Color2);
+    /* Color de las letras en el footer */
+    padding: 60px 0 30px;
+  }
+
+  #navigate {
+    color: var(--Color1);
+    font-family: var(--fuente1);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  #nav-text {
+    background-color: var(--Color7);
+  }
+
+  #logo-nav {
+    padding-left: 100px;
+    background-color: var(--Color4);
+  }
+
+  #font-header {
+    font-size: 13px;
+    font-family: var(--fuente2);
+    font-weight: 100;
+    color: var(--Color4);
+    padding-left: 100px;
+  }
+
+  /* APARTADO: ¿QUIENES SOMOS? */
+  /* Modifica toda la sección "about" */
+  #about {
+    background-color: var(--Color4);
+    color: var(--Color5);
+    position: relative;
+    overflow: hidden;
+}
+  
+  #about h2 {
+    /*TÍTULO: QUIÉNES SOMOS?*/
+    margin-bottom: 40px;
+    font-size: 70px;
+    text-align: left;
+    color: var(--Color6);
+  }
+
+  /* Puntos */
+  .dots{
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 87px;
+    font-size: 13px;
+  }
+
+  .dots-purpple {
+    color: var(--color20);
+  }
+
+  .dots-green {
+    color: var(--Color9);
+  }
+
+  .dots-white {
+    color: var(--Color4);
+  }
+
+  .dots-center {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .dots-left {
+    justify-content: flex-start;
+  }
+  
+  .dots-small {
+    font-size: 10px;
+    gap: 6px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .dots-about {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .dots-especialidad {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  /* Fin de Puntos */
+
+  /* Estrellas */
+  .stars {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 87px;
+    font-size: 10px;
+    color: var(--color18);
+  }
+
+  .stars-small {
+    font-size: 15px;
+    gap: 6px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-content: center;
+  }
+
+
+  /* Fin de estrellas */
+
+  /* Para el apartado: ¿Quiénes somos? */
+.about-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      flex: 1;
+  }
+
+.about-images img {
+      width: calc(50% - 7.5px);
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50px;
+  }
+
+  .about-layout {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .about-content {
+    flex: 1;
+    margin-top: -40px;
+    max-width: 500px;
+  }
+  /* fin apartado */
+
+
+  /* APARTADO: TARIFAS */
+  #tarifas {
+    background-color: var(--Color7);
+    color: var(--Color3);
+  }
+
+  /* APARTADO: NUESTRO EQUIPO */
+  #equipo {
+    background-color: var(--Color7);
+    color: var(--Color1);
+  }
+
+  #clientes {
+    background-color: var(--Color10);
+    color: var(--Color1);
+  }
+
+  /* APARTADO: NUESTROS SERVICIOS */
+  #servicios {
+    background-color: var(--Color11);
+    color: var(--Color1);
+  }
+
+  #servicios h2 {
+    /*TITULO: NUESTROS SERVICIOS */
+    text-align: center;
+    font-size: 70px;
+    color: var(--Color6);
+  }
+
+  /* Flexbox padre para agrupar las tarjetas */
+  .servicios-row {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que las cajas bajen a la siguiente línea si no caben */
+    justify-content: space-between;
+    /* Separa las cajas a los extremos */
+    margin-top: 50px;
+  }
+
+  .servicio-card {
+    display: flex;
+    align-items: center;
+
+    width: 48%;
+    background-color: var(--Color4);
+    margin-bottom: 30px;
+    padding: 30px;
+
+    border-radius: 15px;
+    /* Hace que las esquinas sean redondeadas */
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+    transition: all 0.4s ease-in-out;
+  }
+
+  .servicio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    /* Oscurece la sombra al pasar el cursor */
+  }
+
+  .servicio-icon {
+    min-width: 80px;
+    /* Hace un tamaño mínimo. Evita que el círculo se aplaste si el texto de la derecha es muy largo */
+    height: 80px;
+
+    border-radius: 50%;
+    /* La caja sea un círculo perfecto */
+    display: flex;
+    justify-content: center;
+    /* Centra el ícono de font-awesome horizontalmente */
+    align-items: center;
+
+    font-size: 32px;
+    color: var(--Color4);
+    margin-right: 25px;
+  }
+
+  .servicio-text h3 {
+    color: var(--Color6);
+    font-size: 22px;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+
+  .servicio-text p {
+    color: var(--Color5);
+    font-size: 15px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  /* Colores de los iconos "Servicios" */
+  .icon-blue {
+    background-color: var(--color14);
+  }
+
+  .icon-orange {
+    background-color: var(--color15);
+  }
+
+  .icon-pink {
+    background-color: var(--color16);
+  }
+
+  .icon-green {
+    background-color: var(--color17);
+  }
+
+  .icon-yellow {
+    background-color: var(--color18);
+  }
+
+  .icon-lightblue {
+    background-color: var(--color19);
+  }
+
+  /* APARTADO: ¿NECESITAS AYUDA? */
+  #ayuda {
+    background-color: var(--Color4);
+    color: var(--Color8);
+    position: relative;
+  }
+
+  #ayuda h2 {
+    margin-bottom: 40px;
+    font-size: 49px;
+    color: var(--Color6);
+  }
+
+  .ayuda-layout {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .ayuda-content {
+    flex: 0.8;
+  }
+
+  .ayuda-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .mapa {
+    flex: 1;
+    margin-top: 80px;
+  }
+
+  .mapa iframe {
+    width: 750px;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
+  }
+
+  #contact-form {
+    background-color: var(--Color11);
+    color: var(--Color1);
+  }
+
+  #contact-form h2 {
+    /* TÍTULO: CONTÁCTANOS */
+    color: var(--Color6);
+  }
+
+  #font-p-about {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Color5);
+    font-family: var(--fuente1);
+  }
+
+
+  /* #font-team {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--Color6);
+    max-width: 50%;
+    margin: auto;
+  }
+
+  #font-fundador {
+    font-size: 31px;
+    font-weight: 800;
+    color: var(--Color6);
+    font-family: var(--fuente1);
+  }
+
+  #font-gerente {
+    font-size: 31px;
+    font-weight: 800;
+    color: var(--Color6);
+    font-family: var(--fuente1);
+  } */
+
+  /* APARTADO: CONSULTA TU ESPECIALIDAD */
+
+  #font-especialidad {
+    font-size: 48px;
+    font-weight: 800;
+    font-family: var(--fuente1)
+  }
+
+  #especialidad {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    background: var(--color20);
+    color: var(--Color10);
+  }
+
+  #footer a {
+    /* Para los iconos del footer */
+    color: var(--Color3);
+    text-decoration: none; /* Quita subrayado */
+  }
+
+  .footer-social a {
+    color: var(--color20);
+  }
+
+  .footer-social a i {
+    background: var(--Color10);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    /* IZQUIERDA */
+  .left {
+      width: 34%;
+  }
+
+  .subtitulo {
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      font-weight: 500;
+  }
+
+  .titulo {
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 1.2;
+      max-width: 500px;
+  }
+
+  /* DERECHA */
+  .right {
+      width: 60%;
+      display: flex;
+      gap: 80px;
+  }
+
+  .col {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+  }
+
+  .item h3 {
+      font-size: 23px;
+      margin: 0;
+      position: relative;
+      padding-left: 15px;
+  }
+
+  .item h3::before {
+      content: "›";
+      position: absolute;
+      left: 0;
+  }
+
+  .item p {
+      margin: 5px 0 0 15px;
+      font-size: 16px;
+      opacity: 0.8;
+  }
+
+
+  /* ---------------------------------- */
+  /* SELECTORES DE TIPO ETIQUETA */
+  /* ---------------------------------- */
+  html {
+    scroll-behavior: smooth;
+    /* Suaviza el salto de scrolla hacia la parte superior de la página */
+  }
+
+  body {
+    font-family: var(--fuente1);
+    line-height: var(--spacing1);
+    /* A lo de arriba (^), sirve como interlineado entre textos */
+  }
+
+  /* Elimina los espacios que aparecen debajo del objeto */
+  img.video {
+    display: block;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  /* ------------------------------ */
+  /* Selectores de tipo CLASS */
+  /* ------------------------------ */
+
+  .font-p-team {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fuente1);
+    color: var(--Color8);
+  }
+
+  /* .padding-header{
+      padding-top: 3px;
+      padding-bottom: 3px;
+    } */
+
+  .padding-xs {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .padding-xl {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .container {
+    max-width: 70%;
+    margin: auto;
+  }
+
+  .container-left {
+    max-width: 30%;
+    margin-left: 10%;
+    margin-right: 60%;
+  }
+
+  .container-right {
+    max-width: 30%;
+    margin-left: 70%;
+    margin-right: 10%;
+  }
+
+  .container-center {
+    text-align: center;
+  }
+
+
+  /* Responsive para imagenes (permite adaptar la leyenda a cualquier tamaño) */
+  /* Permite aumentarse al 100% de un tamaño determinado por nosotros */
+  .img-fluid {
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .img-team {
+    width: 50%;
+    height: auto;
+  }
+
+  /* Responsive para videos */
+  .video-fluid {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  /* Formatos de tabla */
+
+  #tarifas h2 {
+    color: var(--Color6);
+  }
+
+  .tbl-tarifas {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .tbl-tarifas th {
+    background-color: var(--Color3);
+    color: var(--Color4);
+    border: 1px solid var(--Color2);
+    padding: 10px;
+  }
+
+  .tbl-tarifas td {
+    text-align: center;
+    border: 1px solid var(--Color3);
+    padding: 10px;
+    color: var(--Color2);
+  }
+
+  .tbl-tarifas tfoot td {
+    font-size: 0.5rem;
+    /* Tamaño de la fuente */
+    text-align: right;
+    /* Alineacion del texto */
+    font-style: italic;
+    /* Estilo cursiva */
+    font-weight: bold;
+    /* Estilo negrita */
+
+  }
+
+  .tbl-tarifas caption {
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.1rem;
+    color: var(--Color3);
+  }
+
+  .tbl-contactos tfoot {
+    font-weight: bold;
+    text-align: right;
+  }
+
+  /*------------------------------*/
+  /* ===== ABOUT SECTION ===== */
+  /*---------------------------*/
+
+  .about-text p {
+    text-align: left;
+    max-width: 600px;
+  }
+
+  /* Avance semana 8 */
+
+  /* Flexbox para el footer */
+  .footer-flexbox {
+    display: flex;
+    /* Activa flexbox */
+    flex-direction: row;
+    /* Orientación de los hijos en fila */
+    justify-content: space-between;
+    /* Los hijos se separan y se ubican a la der. del container */
+  }
+
+  .container-footer {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 80px;
+  }
+
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 60px;
+    flex-direction: row-reverse;
+  }
+
+  .footer-links {
+    width: auto;
+    min-width: 220px;
+  }
+
+  .footer-links h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    /*Para que la letra no se vea tan gruesa*/
+    padding-bottom: 20px;
+  }
+
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    /*Para quitar las lineas a los enlaces*/
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+  }
+
+
+  .footer-links ul li a:hover {
+    padding-left: 8px;
+  }
+
+  .social-link {
+    display: flex;
+    gap: 12px;
+  }
+
+  .social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    /* background-color: rgba(2, 2, 255, 0.2); */
+    background-color: var(--Color4);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--Color1);
+    transition: all .5s ease;
+  }
+
+  .social-link a:hover {
+    transform: translateY(-3px);
+    background-color: var(--color21);
+  }
+
+  /*Libro de reclamaciones */
+  .claim-book {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .claim-book i {
+    font-size: 40px;
+    color: var(--Color3);
+  }
+
+  .claim-book a {
+    text-decoration: none;
+    color: var(--Color1);
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid var(--Color13);
+    width: 80%;
+    margin: 20px auto 0 auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .footer-bottom span {
+    color: red;
+  }
+
+  /* ********************** */
+  /* Flexbox de uso general */
+  /* ********************** */
+
+  /* Flexbox Padre */
+  .row {
+    display: flex;
+    /*Avtiva flexbox*/
+    flex-direction: row;
+    /* Orientacion de los hijos de la fila*/
+
+    /* Para corregir el titulo de arriba de la imagen y se vea alineado */
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  /* Flexbox hijos */
+  .col {
+    /* Permiten que los hijos tengan el mismo ancho*/
+    flex-basis: 0;
+    flex-grow: 1;
+
+    /* Espacio entre columnas */
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .service-button {
+    display: inline-block;
+    /*Cada enlace se tratara como una caja*/
+    background-color: var(--Color3);
+    color: var(--Color4);
+    padding: 15px 30px;
+    text-decoration: none;
+    /*Quita el subrayado*/
+    transition: all 0.5s ease-in-out;
+    /*Transicion*/
+    border-radius: 15px;
+  }
+
+  /* Para cambiarle el color a la cajita de Conoce mas */
+  .service-button:hover {
+    background-color: var(--Color3);
+  }
+
+  .btn {
+    /*Color de botón del apartado "Necesitas ayuda?"*/
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 35px;
+    color: var(--Color4);
+    background-color: var(--Color12);
+    text-decoration: none;
+    border-radius: 56px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+  }
+
+  .btn i {
+    margin-left: 8px;
+  }
+
+  /* *********************************** */
+  /* Clases para estilizar el formulario */
+  /* *********************************** */
+  .form-control {
+    display: block;
+    /* Se trabajará como una caja */
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    /* A lo de arriba (^) 
+    Espacio que habrá entre cada caja (nombre, correo, asunto, etc) */
+    font: inherit;
+    /* Heredar la fuente de body */
+    border: none;
+    /*Quitar el borde*/
+    outline: none;
+    /*Quita el borde que aparece al intentar completar en las casillas*/
+    border-bottom: 1px solid var(--Color3);
+  }
+
+  .form-link {
+    /*Color que sombreará a las palabras 'términos y condiciones'*/
+    color: var(--Color3);
+    text-decoration: none;
+    /* Quita el subrayado */
+  }
+
+  .form-submit {
+    /*Estilo para el botón 'Enviar mensaje'*/
+    background-color: var(--Color1);
+    color: var(--Color4);
+    padding: 15px 20px;
+    border: none;
+    font: inherit;
+    margin-top: 15px;
+    cursor: pointer;
+    /* A lo de arriba (^) 
+    Al pasar el mouse por el botón, aparecerá el ícono de la manito. */
+    text-transform: uppercase;
+    /* A lo de arriba (^)
+    Convierte el texto a mayúscula, sin haber cambiado la letras.*/
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+
+  .form-control-noresize {
+    resize: none;
+    /* A lo de arriba (^) 
+    Evita que nuestro elemento cambie de tamaño */
+  }
+
+  .form-submit:hover {
+    background-color: var(--Color3);
+  }
+
+  /* ***************** */
+  /* Efectos Visuales */
+  /* **************** */
+
+  #banner {
+    overflow: hidden;
+    /* A lo de arriba (^)
+    Evita que, al hacer zoom, las partes excedentes de la imagen
+    salgan de sí, al aplicarse, la imagen desbordada desaparece.
+    */
+  }
+
+
+  /* ----------------- */
+  /* APARTADO BANNER   */
+  /* ----------------- */
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: var(--Color4);
+    width: 55%;
+    margin: 0;
+  }
+
+  .banner-text h1 {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1.05; /* Aplastamos el interlineado casi al ras de la letra */
+    margin-bottom: 0px; /* Matamos cualquier margen por debajo */
+  }
+
+  .banner-text p {
+    font-size: 22px;
+    margin-top: 10px; /* Separación real y controlada desde el párrafo */
+    margin-bottom: 25px;
+  }
+  
+
+  #banner img {
+    transition: all 0.4s ease-in-out;
+    display: block;
+  }
+
+  .btn_banner{
+    /*Color de botón del apartado "Necesitas ayuda?"*/
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 35px;
+    color: var(--Color4);
+    background-color: var(--color16);
+    text-decoration: none;
+    border-radius: 56px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+  } 
+
+  #banner img:hover {
+    transform: scale(1.1);
+    /* A lo de arriba (^)
+    Cuando se pasa el mouse por la zona del banner,
+    genera que la imagen se agrande un 10% */
+  }
+
+  /* ----------------- */
+  /* APARTADO CARD */
+  /* ---------------- */
+
+  /* Titulo para cada seccion */
+  .titulo-seccion { 
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--Color6);
+    margin-bottom: 8px;
+  }
+
+  .doctor-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-color: var(--Color4);
+    transition: all 0.4s ease-in-out;
+    font-family: var(--fuente1);
+    border-radius: 25px;
+  }
+
+  .doctor-card:hover {
+    transform: translateY(10px) perspective(700px) rotatey(5deg);
+    /*Efecto para q se mueva hacia abajo*/
+    box-shadow: 0 5px 8px var(--Color2);
+    /*Para ponerle un poco de sombra a la imagen*/
+  }
+
+  .card-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    text-align: center; /*cambio1*/
+  }
+
+  .doctor-cargo {
+    color: var(--Color13);
+    font-size: 15px;
+    font-weight: 500; /*Quita la negrita*/
+  }
+
+  .doctor-nombre {
+    color: var(--Color6);
+    font-size: 39px;
+    font-weight: 800;
+    text-align: left;
+  }
+  
+  .doctor-descripcion {
+    color: var(--Color8);
+    font-weight: 400;
+    /*  */
+    flex-grow: 1;
+    /* place-items: center; */
+  }
+
+  /* APARTADO: CLIENTE */
+
+  .cliente-card {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-color: var(--Color4);
+    transition: all 0.4s ease-in-out;
+    font-family: var(--fuente1);
+    border-radius: 50px;
+    /*  */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .cliente-card:hover {
+    transform: translateY(10px) perspective(700px) rotatey(5deg);
+    /*Efecto para q se mueva hacia abajo*/
+    box-shadow: 0 5px 8px var(--Color2);
+    /*Para ponerle un poco de sombra a la imagen*/
+  }
+
+  .card-container-cliente {
+    padding: 20px;
+
+    display: flex; /* Convierte al contenedor en un Flexbox */
+    flex-direction: column; /* Da la orden que coloque los elementos uno debajo del otro */
+    height: 100%; /* Permite que se use todo el espacio del bloque */
+  }
+
+  .cliente {
+    color: var(--Color13);
+    font-size: 15px;
+    font-weight: 500; /*Quita la negrita*/
+    text-align: center;
+  }
+
+  .cliente-nombre {
+    color: var(--Color6);
+    font-size: 39px;
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .cliente-descripcion {
+    color: var(--Color8);
+    font-weight: 400;
+    text-align: center;
+  }
+
+  
+
+  .sticky-top {
+    position: sticky;
+    /* A lo de arriba (^)
+    Deja el elemento pegado cuando llegue a 
+    la posición 0 de la parte superior de la ventana.*/
+    top: 0px;
+    /* A lo de arriba (^)
+    Controla la profundidad de la caja.
+    Mientras más alto sea el número, más "encima" se
+    mostrará la caja */
+    z-index: 1000;
+    /* A lo de arriba (^)
+    Usado, cuando tenemos múltiples cajas, para controlar
+    el orden en el que se superponen los elementos en una página web */
+  }
+
+  /* Selectores para estilizar el topbar */
+  #topbar {
+    background-color: var(--Color3);
+    /*Color de fondo*/
+    color: var(--Color4);
+    /*Color de texto*/
+    font-size: 0.8rem;
+    font-family: var(--fuente2);
+    font-weight: normal;
+  }
+
+  .topbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* Centrar verticalmente */
+  }
+
+  .topbar-container a {
+    /*Enlaces dentro del top-bar*/
+    color: var(--color3);
+    /*Color de texto*/
+    text-decoration: none;
+    /*Quitar subrayado*/
+    padding: 0px 5px;
+    font-family: var(--fuente2);
+  }
+
+  .scroll-up {
+    position: fixed;
+    /* Posición fija */
+    bottom: 30px;
+    /* Desde el borde inferior de la ventana 30px hacia arriba */
+    right: 30px;
+    /* 30px antes que llegue a lado derecho de la ventana */
+    width: 45px;
+    /* Ancho de caja */
+    height: 45px;
+    /* Alto de caja */
+    text-align: center;
+    /* Centrar horizontalmente */
+    line-height: 45px;
+    /* Centrar verticalmente */
+    background-color: var(--Color4);
+    color: var(--Color1);
+    border: 1px solid var(--Color1);
+    /* Color de borde */
+    border-radius: 5px;
+    /* Redondeo de borde */
+  }
+
+  /* Sección principal del título de página. Permite mostrar una imagen de fondo centrada, 
+  alinear el contenido al centro y controlar la apariencia visual del banner */
+  .page-title {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--Color4);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url("../img/bannerveth.jpg");
+  }
+
+  /* Capa superpuesta con degradado oscuro para mejorar la visibilidad del texto */
+  .page-title::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.35));
+  }
+
+  /* Contenedor del texto principal. Se coloca encima del degradado */
+  .page-title-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Estilo del título principal */
+  .page-title-content h2 {
+    font-size: 2.5rem important;
+    margin-bottom: 10px;
+  }
+
+  /* Estilo del texto descriptivo */
+  .page-title-content p {
+    font-size: 1.1rem;
+  }
+
+  /* *********************************** */
+  /* Selectores para estilizar la barra */
+  /* de navegación y sus elementos */
+  /* ********************************** */
+
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* A lo de arriba (^) 
+    Centra a los elementos hijos (verticalmente)
+    en al área de la cabecera */
+    position: relative;
+    /* A lo de arriba (^) 
+    Posiciona los elementos hijos de manera absoluta 
+    dentro del contenedor del nav-menu */
+  }
+
+  /* Tamaño del logo (SELECTOR TIPO CLASS)*/
+  .nav-logo {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-menu-toggle {
+    font-size: 2rem;
+    /* 32px */
+    /* 1 rem = 16px */
+    cursor: pointer;
+    display: none;
+    /* Ocultar el botón temporalmente */
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-menu-link {
+    display: inline-block;
+    /*Trata cada enlace como una caja*/
+    /*Color de la fuente*/
+    color: var(--Color1);
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .nav-menu-link:hover {
+    /* Cuando se pasa el mouse por encima,
+    aparece la opción seleccionada "sombreada"
+    eso, sería su color */
+    background-color: var(--Color9);
+    /* Al pasar el mouse por el texto
+    el color de la fuenta tornará verde */
+    color: var(--Color4);
+  }
+
+  .nav-menu-link-active {
+    /* Le da color al botón donde 
+    se ubica actualmente la página*/
+    background-color: var(--Color9);
+
+    /* Sombrea al elemento actual donde nos ubicamos
+    de un color especificado en 'color:...' */
+    color: var(--Color4);
+  }
+
+ /* --- SEMANA 11 --- */
+
+  /* --------------------------------------------------- */
+  /* DISEÑO RESPONSIVO PARA ESCRITORIO (PANTALLA GRANDE) */
+  /* -------------------------------------------------- */
+  @media (max-width: 1200px) {
+  /* --- APARTADO GENERAL --- */
+    .container {
+      max-width: 100%;
+    }
+  /* --- FIN APARTADO GENERAL --- */
+
+  #topbar .topbar-container {
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    font-size: 12.5px;
+  }
+
+  .nav-bar {
+    width: 90%;
+    margin: auto;
+  }
+
+  .about-layout {
+    width: 90%;
+    margin: auto;
+  }
+    
+  /* Apartado: Banner */
+  .banner-text h1 {
+    font-size: 45px;
+  }
+  /* Fin apartado */
+
+
+  /* Apartado: Nuestro equipo */
+  #equipo .row{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+  }
+
+  .doctor-card {
+    margin: auto;
+    display: flex;
+    gap: 1px;
+  }
+
+  #clientes .row {
+    width: 90%;
+    margin: 0 auto;
+    display: flex; /* Convierte elementos en un contenedor flexible */
+    justify-content: center; /* Centra contenido */
+    gap: 25px; /* Permite el espaciado entre cartas */
+  }
+  /* Fin apartado */
+
+  /* Apartado: Nuestros servicios */
+  #servicios .servicios-row{
+    width: 90%;
+    margin: auto;
+    gap: 15px;
+  }
+  /* Fin apartado */
+
+  /* Apartado: Tarifa de servicios  */
+  #tarifas .tbl-tarifas {
+    width: 90%;
+    margin: auto;
+    gap: 15px;
+  }
+
+  #tarifas h2 {
+    text-align: left;
+    font-size: 49px;
+    width: 90%;
+    margin: auto;
+  }
+  /* Fin apartado */
+  
+  /* Apartado: Necesitas ayuda */
+  #ayuda .ayuda-layout {
+    width: 90%;
+    margin: auto;
+  }
+
+  .mapa iframe {
+    width: 650px;
+    height: 500px;
+
+  }
+  /* Fin apartado */
+
+  /* Apartado: Contactanos */
+  #contact-form .container {
+    width: 90%;
+    margin: auto;
+  }
+  /* Fin apartado */
+  }
+
+ /* -------------------------------------------------------------- */
+ /* DISEÑO RESPONSIVE PARA PANTALLA MEDIANA (TABLETAS EN POSICIÓN VERTICAL)*/
+ /* -------------------------------------------------------------- */
+  @media (max-width: 992px) {
+      /* --- CONTENIDO GENERAL --- */
+      .container {
+        max-width: 85%;
+      }
+
+      .padding-xl {
+        padding-top: 45px;
+        padding-bottom: 45px;
+      }
+
+      .dots {
+        justify-content: center;
+        font-size: 12.5px;
+      }
+
+      .titulo-seccion {
+        text-align: center;
+      }
+      /* --- FIN CONTENIDO GENERAL --- */
+      
+      /* Apartado 'top-bar' */
+      /* primer topbar con ID */
+      #topbar .topbar-container {
+        font-size: 12.5px;
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+      }
+      /* Fin apartado */
+      
+      /* Apartado: Nav-bar */
+      #header {
+        width: 100%;
+        max-width: 992px;
+        margin: auto;
+      }
+
+      .nav-bar {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%; /* Ancho que ocuparán los elementos del nav-bar */
+        margin: auto; /* Margen izq (5px) y der (5px) */
+        font-size: 15px;
+      }
+      /* Fin apartado */
+      
+      /* Apartado: Banner */
+      .banner-text {
+        width: 70%;
+      }
+
+      .banner-text h1 {
+        font-size: 38px;
+      }
+
+      .banner-text p {
+        font-size: 18px;
+      }
+      /* Fin apartado */
+
+      /* Apartado: Quiénes somos */
+      .about-content {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      #about .titulo-seccion {
+        text-align: center;
+      }
+
+      .about-layout {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about-content {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+      }
+
+      .about-text p {
+        text-align: center;
+      }
+
+      .about-images {
+        width:100%;
+        max-width:100%;
+        margin:auto;
+      }
+      /* Fin apartado */
+
+      /* Apartado: Nuestro equipo */
+      #equipo .row{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        gap: 30px;
+      }
+
+      .doctor-card {
+        margin: auto;
+        display: flex;
+        gap: 1px;
+      }
+
+      .doctor-nombre,
+      .doctor-cargo,
+      .doctor-descripcion {
+        text-align: center;
+      }
+
+      .card-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+      }
+      /* Fin apartado */
+
+      /* Apartado: Nuestros clientes */
+      #clientes .row {
+        display: flex; /* Convierte elementos en un contenedor flexible */
+        flex-wrap: wrap;
+        justify-content: center; /* Centra contenido */
+        gap: 25px; /* Permite el espaciado entre cartas */
+      }
+
+      .cliente-card {
+        width: 325px;
+        margin: auto;
+      }
+      /* Fin apartado*/
+
+      /* Apartado: Especialidades */
+      #especialidad {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px 30px;
+      }
+
+      .left {
+        width: 100%;
+        text-align: center;
+      }
+      
+      .subtitulo {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      .right {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 25px;
+        margin-top: 10px;
+      }
+
+      .titulo {
+        max-width: 500px;
+        margin: 0 auto 25px auto;
+      }
+
+      .dots-especialidad {
+        margin-bottom: 40px;
+      }
+
+      .item {
+        min-height: 110px;
+      }
+
+      .item h3 {
+        padding-left: 0;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .item p {
+        margin: 5px 0 0 0;
+        text-align: center;
+      }
+
+      .item h3::before {
+        position: static;
+        margin-right: 5px;
+      }
+        /* Fin apartado */
+
+      /* Apartado: Nuestros servicios */
+      #servicios .servicios-row{
+        width: 95%;
+        margin: auto;
+        gap: 15px;
+      }
+      /* Fin apartado */
+
+      /* Apartado: Tarifa de servicios*/
+      #tarifas .tbl-tarifas {
+        width: 95%;
+        margin: auto;
+        gap: 15px;
+      }
+
+      #tarifas h2 {
+        text-align: left;
+        font-size: 49px;
+        width: 95%;
+        margin: auto;
+      }
+
+      #tarifas caption {
+        font-size: 25px;
+      }
+
+      .tbl-tarifas td:last-child{
+        white-space: nowrap;
+      }
+
+      .tbl-tarifas tfoot td {
+        font-size: 0.75rem; /* Aumento de tamaño para los precios actuales*/
+      }
+      /* Fin apartado */
+
+      /* Apartado: Ayuda */
+      .ayuda-layout {
+        flex-direction: column;
+        text-align: center;
+        width: 95%;
+        margin: auto;
+      }
+
+      .mapa {
+        margin-top: 0px;
+      }
+
+      .mapa iframe {
+        width: 750px;
+        height: 450px;
+      }
+      /* Fin apartado */
+
+      /* Apartado: Contáctanos */
+      #contact-form .container{
+        max-width: 95%;
+        margin: auto;
+      }
+      /* Fin apartado */
+  }
+
+  /* -------------------------------------------------------------- */
+  /* DISEÑO RESPONSIVE PARA TABLET (POSICIÓN VERTICAL)*/
+  /* -------------------------------------------------------------- */
+  @media (max-width: 768px) {
+    /* --- CONTENIDO GENERAL --- */
+    .container {
+      max-width: 90%;
+    }
+    
+    .padding-xl {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    
+    .padding-xs {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .titulo-seccion {
+      text-align: center;
+    }
+
+    .dots {
+      justify-content: center;
+      font-size: 13px;
+    }
+    /* --- FIN CONTENIDO GENERAL --- */
+
+    /* Apartado: top-bar */
+    #topbar .topbar-container {
+      font-size: 12.5px;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      row-gap: 5px;
+      width: 90%;
+      margin: auto;
+    }
+    /* Fin apartado */
+
+    /* Apartado: Nav-bar */
+    .nav-bar {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%; /* Ancho que ocuparán los elementos del nav-bar */
+      margin: auto; /* Margen izq (5px) y der (5px) */
+    }
+    /* Fin apartado */
+
+    /* Apartado: Banner */
+    .banner-text {
+      width: 85%;
+    }
+
+    .banner-text h1 {
+      font-size: 32px;
+    }
+
+    .banner-text p {
+      font-size: 16px;
+    }
+    /* Fin apartado */
+
+    /* Apartado: Quiénes somos */
+    #about .titulo-seccion {
+      font-size: 60px;
+    }
+
+    .about-layout {
+      flex-direction: column;
+      align-items: center;
+      width: 95%;
+      margin: auto;
+    }
+
+    .about-content {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-text p {
+    text-align: center;
+    }
+
+    .about-images {
+        width:100%;
+        max-width:100%;
+        margin:auto;
+      }
+    /* Fin apartado */
+
+    /* Apartado: Nuestro equipo */
+    #equipo .row{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+      }
+
+    .doctor-card{
+      width: 300px;
+    }
+    
+    .doctor-card,
+    .doctor-nombre,
+    .doctor-descripcion {
+      text-align: center;
+    }
+    
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .service-button{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* Fin apartado */
+
+
+    /* Apartado: Cliente */
+    #clientes .titulo-seccion {
+      max-width: 85%;
+      margin: auto;
+    }
+
+    #clientes .container {
+      max-width: 100%;
+    }
+
+    #clientes .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #clientes .col {
+      width: 250px;
+    }
+
+    #clientes .col:last-child {
+      flex: 0 0 45%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cliente-card img {
+      display: none;
+    }
+
+    .cliente-card {
+      min-height: auto;
+    }
+
+    .cliente {
+      font-size: 18px;
+    }
+
+    .cliente-nombre {
+      font-size: 28px;
+    }
+    /* Fin apartado */
+
+    /* Apartado: Especialidades */
+    #especialidad{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 50px 30px;
+    }
+
+    .left{
+      width: 100%;
+      text-align: center;
+    }
+    
+    .subtitulo {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .right {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 25px;
+      margin-top: 10px;
+    }
+
+    .titulo{
+      max-width: 500px;
+      margin: 0 auto 25px auto;
+    }
+
+    .dots-especialidad {
+      margin-bottom: 40px;
+    }
+
+    .item{
+      min-height: 110px;
+    }
+
+    .item h3{
+      padding-left: 0;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .item p{
+      margin: 5px 0 0 0;
+      text-align: center;
+    }
+
+    .item h3::before{
+      position: static;
+      margin-right: 5px;
+    }
+    /* Fin apartado */
+
+    /* Apartado: Nuestros servicios */
+    #servicios .titulo-seccion {
+      font-size: 60px;
+    }
+
+    .servicio-card {
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+    }
+
+    .servicio-text{
+        width:100%;
+    }
+
+    .servicio-text h3,
+    .servicio-text p{
+        text-align:center;
+    }
+
+    .servicio-icon {
+      display: none;
+    }
+    /* Fin apartado */
+
+
+    /* Apartado: Tarifa de servicios */
+    #tarifas h2{
+      font-size: 40px;
+    }
+
+    #tarifas caption {
+      font-size: 25px;
+    }
+
+    .tbl-tarifas tfoot td {
+      font-size: 0.60rem;
+    }
+    /* Fin apartado */
+
+    /* Apartado: Ayuda */
+    #ayuda h2 {
+      font-size: 60px;
+    }
+
+    .ayuda-layout {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .mapa {
+      margin-top: 0px;
+    }
+
+    .mapa iframe {
+      width: 650px;
+      height: 450px;
+    }
+
+    .nav-menu-toggle {
+      display: block;
+    }
+
+    /* Apartado: Contáctanos */
+    #contact-form h2 {
+      font-size: 40px;
+    }
+    /* Fin apartado */
+
+    /* Botón hamburguesa */
+    .nav-menu {
+      flex-direction: column; /* Los elementos del menú se apilan en columna */
+      position: absolute; /* Posicionamiento del menú */
+      top: 70px;
+      text-align: center;
+      right: 35px;
+      width: 240px;
+      background-color: var(--Color10);
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0px 8px 24px var(--Color6);
+      z-index: 1000; /* Coloca el menú encima de los demás elementos */
+
+      /* Ocultamos el menú por defecto  */
+      opacity: 0; /* Inicialmente transparente */
+      visibility: hidden; /* Inicialmente oculto */
+      transform: translateY(-12px); /* Lo desplaza ligeramente hacia arriba */
+      transition: all 0.3s ease-in-out; /* Transición suave para mostrar/ocultar el menú */
+    }
+
+    .nav-menu-link {
+      border-radius: 8px;
+      padding: 12px;
+      border-bottom: 1px solid var(--Color2);
+    }
+
+    /* Hace visible el botón hamburguesa */
+    .nav-menu.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    /* Fin apartado */
+  }
+  
+  /* --------------------------------------------------- */
+  /* DISEÑO RESPONSIVO PARA CELULAR (POSICIÓN VERTICAL) */
+  /* -------------------------------------------------- */
+  @media (max-width: 480px) {
+    /* --- CONTENIDO GENERAL --- */
+    .servicio-card{
+    width:100%;
+    }
+
+    .container {
+      max-width: 95%;
+    }
+
+    .padding-xl {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .padding-xs {
+      padding-top: 12.5px;
+      padding-bottom: 12.5px;
+    }
+
+    /* Titulo de secciones */
+    .titulo-seccion {
+      font-size: 50px;
+    }
+    /* --- FIN CONTENIDO GENERAL --- */
+
+    /* Apartado: top-bar */
+    #topbar .topbar-container {
+      flex-direction: column-reverse;
+      font-size: 11.5px;
+      flex-wrap: wrap;
+      row-gap: 5px;
+    }
+    /* Fin apartado */
+    
+    /* Apartado: Nav-bar */
+    .nav-bar {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    /* Fin apartado */
+
+    /* Apartado: Banner */
+    .banner-text {
+      width: 90%;
+      left: 5%;
+    }
+
+    .banner-text h1 {
+      font-size: 28px;
+    }
+
+    .banner-text p {
+      font-size: 14px;
+    }
+    /* Fin apartado */
+    
+    /* Apartado: Quiénes somos */
+    #about .titulo-seccion {
+      font-size: 50px;
+    }
+
+    .about-layout {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about-images {
+        width:100%;
+        max-width:100%;
+        margin:auto;
+      }
+
+    .about-content {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-text p {
+      text-align: center;
+    }
+
+    .dots {
+      justify-content: center;
+      font-size: 10px;
+    }
+    /* Fin apartado */
+
+    /* Apartado: Equipo */
+    /* Tarjetas del equipo */
+
+    .card-container{
+      align-items: center;
+    }
+
+    .doctor-cargo,
+    .doctor-nombre,
+    .doctor-descripcion{
+      text-align: center;
+    }
+
+    .service-button{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #equipo .row{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #equipo .col{
+      width: 100%;
+      max-width: 400px;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+
+    #equipo 
+    .dots-small,
+    .service-button {
+      display: none;
+    }
+    /* Fin apartado */
+
+    /* Apartado: Cliente */
+    /* Clientes */
+    #clientes .row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #clientes .col{
+      width: 90%;
+      max-width: 520px;
+    }
+
+    .cliente-card img{
+        display: none;
+    }
+
+    .cliente-card{
+        min-height: auto;
+        width: 90%;
+        margin: auto;
+    }
+
+    .cliente{
+        font-size: 18px;
+    }
+
+    .cliente-nombre{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .cliente-descripcion{
+        font-size: 14px;
+    }
+    /* Fin apartado */
+
+    /* Apartado: Especialidades */
+    .right{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .col{
+      display: block;
+    }
+
+    .item{
+      width: 100%;
+      text-align: center;
+      min-height: auto;
+    }
+
+    .item h3{
+      font-size: 30px;
+      padding-left: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    .item p{
+      margin-top: 5px;
+      text-align: center;
+    }
+
+    .item h3::before{
+      position: static;
+      margin-right: 5px;
+    }
+    /* Fin apartado */
+
+    /* Apartado: Necesitas ayuda */
+    .ayuda-layout {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 85%;
+      margin: auto;
+    }
+
+    .mapa {
+      width: 100%;
+    }
+
+    .mapa iframe {
+      width: 100%;
+      max-width: 500px;
+      height: 250px;
+    }
+
+    /* Fin apartado */
+
+    /* Apartado: Footer */
+    #footer ul ui {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #footer h4 {
+      text-align: center;
+    }
+
+    .footer-links {
+      text-align: center;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+    }
+  }
+  
+  /* --- FIN DE SEMANA 11 --- */
+
+  /* ------------------- */
+  /* PÁGINAS INTERNAS */
+  /* ------------------- */
+
+/* PÁGINAS INTERNAS DE TEXTO */
+  #politica .container,
+  #nosotros-info .container,
+  #equipo-info .container,
+  #especialidades-info .container,
+  #servicios-info .container,
+  #contactanos-info .container {
+    width: 85%;
+    margin: auto;
+  }
+
+  #politica,
+  #nosotros-info,
+  #equipo-info,
+  #especialidades-info,
+  #servicios-info,
+  #contactanos-info {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  /* FIN PÁGINA */

@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titulo de la pagina que aparece en la pestaña del navegador -->
+    <title>VetHealth</title>
+
+    <!-- Enlazar el HTML con la hoja de estilos externa CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Enlazar el HTML con el favicon (icóno de la pestaña) -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Enlazar HTML con fuentes externas de Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonzts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Enlaza HTML con la librería de iconos de font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <!-- Barra superior-->
+        <section id="topbar" class="padding-xs">
+            <div class="container"> <!-- Inicio del container -->
+                <div class="topbar-container"> <!-- Inicio topbar de container -->
+                    <div class="topbar-contacts"> <!-- Inicio del topbar contactos -->
+                        <!-- Ubicación -->
+                        <a target="_blank" href="https://maps.google.com/?q=Av+Los+Ficus+684+Independencia">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Av. Los Ficus, Independencia <!-- Funciona como enlace -->
+                        </a>
+                        <!-- Correo -->
+                        <a target="_blank" href="mailto:contacto@VetHealth.com">
+                            <i class="fa-regular fa-envelope"></i>
+                            contacto@VetHealth.com
+                        </a>
+                        <!-- Teléfono -->
+                        <a target="_blank" href="tel:+51920800123">
+                            <i class="fa-solid fa-phone"></i>
+                            (+51) 920-800-123
+                        </a>
+                    </div> <!-- Fin topbar contactos -->
+
+                    <div class="topbar-social"> <!-- Inicio del topbar social -->
+                        <!-- Instagram -->
+                        <a target="_blank" href="https://www.instagram.com/veterinaria_galeno/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <!-- Facebook  -->
+                        <a target="_blank" href="https://www.facebook.com/galenoveterinaria/">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <!-- TikTok -->
+                        <a target="_blank" href="https://www.tiktok.com/@.vidasana0">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <!-- X (Twitter) -->
+                        <a target="_blank" href="https://x.com/IMVeterinaria">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div> <!-- Fin del topbar social -->
+                </div> <!-- Fin del topbar container -->
+            </div> <!-- Fin del container -->
+        </section> <!-- Fin de la barra superior -->
+
+        <!-- Cabecera de la página  -->
+        <header id="header" class="padding-xs sticky-top">
+            <div class="container">
+                <!-- Flexbox padre - Barra de navegación -->
+                <div class="nav-bar">
+                    <!-- Logo -->
+                    <!-- h1: Marcador de titulo -->
+                    <div class="nav-logo">
+                        <a href="index.html">
+                            <!-- Logo principal de la página (dentro del body) -->
+                            <img class="img-fluid" src="assets/img/iconpngmod.png" alt="">
+                        </a>
+                    </div>
+
+                    <!-- <h1>VetHealth</h1> -->
+                    <!-- Menú Hamburguesa -->
+                    <div class="nav-menu-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- nav: Barra de menú -->
+                    <nav class="nav-menu">
+                        <a class="nav-menu-link nav-menu-link-active" href="index.html">Inicio</a>
+                        <a class="nav-menu-link" href="assets/pages/nosotros.html">Nosotros</a>
+                        <a class="nav-menu-link" href="assets/pages/equipo.html">Equipo</a>
+                        <a class="nav-menu-link" href="assets/pages/especialidades.html">Especialidades</a>
+                        <a class="nav-menu-link" href="assets/pages/servicios.html">Servicios</a>
+                        <a class="nav-menu-link" href="assets/pages/contactanos.html">Contáctanos</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contenido principal de la página  -->
+        <!-- Fondo consulta (Banner) -->
+        <section id="banner">
+            <img class="img-fluid" src="assets/img/banner.jpg" alt="">
+            <div class="banner-text"> 
+                <div class="banner-content">
+                    <h1>Cuidamos la salud y el bienestar de tu mascota</h1>
+                    <p>
+                        Brindamos atención médica, emergencias 24/7,
+                        peluquería y servicios especializados con amor,
+                        compromiso y profesionalismo.
+                    </p>
+                    <div>
+                        <a target="_blank" href="https://wa.me/51920800123" class="btn_banner">Contáctanos<i
+                            class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        
+        </section>
+
+
+        <!-- Quiénes somos -->
+        <section id="about" class="container-center padding-xl">
+            <!-- Lado izquierdo (TEXTO) -->
+            <div class="container">
+                <div class="about-layout">
+                    <div class="about-content">
+                            <h2 class="titulo-seccion">Quiénes somos</h2>
+                        <div class="dots dots-small dots-purpple dots-left dots-about">
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="about-text" id="font-p-about ">
+                            <p>En Vet Health cuidamos la salud y bienestar de las mascotas mediante atención veterinaria profesional, tecnología moderna y un equipo comprometido con brindar el mejor servicio a cada paciente.</p>    
+                        </div>
+                    </div>
+                    <div class="about-images">
+                        <img src="assets/img/foto1.jpeg" alt="">
+                        <img src="assets/img/foto2.jpeg" alt="">
+                        <img src="assets/img/foto3.jpeg" alt="">
+                        <img src="assets/img/foto4.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuesto Equipo -->
+        <section id="equipo" class="padding-xl">
+            <div class="container">
+                <h2 class="titulo-seccion">Nuestro equipo</h2>
+                <div class="dots dots-purpple dots-center">
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+
+                <!-- Flexbox padre -->
+                <div class="row">
+
+                    <!-- Flexbox hijo 1 -->
+                    <div class="col">
+                        <!-- Tarjeta 1 -->
+                        <div class="doctor-card">
+                            <!-- IMÁGEN DENTRO DEL CARD -->
+                            <img class="img-fluid" src="assets/img/veterinario1.jpg" alt="">
+                            <!-- CAJA QUE CONTIENE TODO EL CONTENIDO DEL CARD -->
+                            <div class="card-container">
+                                <!-- CARGO DEL PROFESIONAL -->
+                                <h2 class="doctor-cargo">FUNDADOR</h2>
+                                <!-- NOMBRE DEL PROFESIONAL -->
+                                <h2 class="doctor-nombre">Dr. Mario Gonzáles</h2>
+                                <div class="dots dots-small dots-green">
+                                    <i class="fa-solid fa-circle"></i>
+                                    <i class="fa-solid fa-circle"></i>
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                                <!-- TEXTO BIOGRÁFICO -->
+                                <p class="doctor-descripcion">
+                                    El Dr. Mario Gonzáles es fundador de Vet Health y cuenta con una amplia trayectoria en medicina veterinaria. Su compromiso, experiencia y amor por los animales han permitido crear una clínica enfocada en el cuidado integral y la atención de calidad para cada mascota.
+                                </p>
+                                <!-- BOTÓN  -->
+                                <a class="service-button" href="assets/pages/nosotros.html">Conoce más</a>
+                            </div>
+                        </div> <!-- Fin de Tarjeta 1 -->
+                    </div> <!--fin del Flexbox hijo 1 -->
+
+                    <!-- Flexbox hijo 2 -->
+                    <div class="col">
+                        <!-- Tarjeta 2 -->
+                        <div class="doctor-card">
+                            <!-- IMAGEN DENTRO DEL CARD -->
+                            <img class="img-fluid" src="assets/img/veterinario2.jpg" alt="">
+                            <!-- CAJA QUE CONTIENE EL CONTENIDO DEL CARD -->
+                            <div class="card-container">
+                                <!-- CARGO DEL PROFESIONAL -->
+                                <h2 class="doctor-cargo">DIRECTORA</h2>
+                                <!-- NOMBRE DEL PROFESIONAL -->
+                                <h2 class="doctor-nombre">Dra. María Salazar</h2>
+                                <div class="dots dots-small dots-green">
+                                    <i class="fa-solid fa-circle"></i>
+                                    <i class="fa-solid fa-circle"></i>
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                                <!-- TEXTO BIOGRAFICO -->
+                                <p class="doctor-descripcion">
+                                    La Dra. María Salazar es directora de Vet Health y especialista en atención clínica veterinaria. Destaca por su dedicación, profesionalismo y cercanía con los pacientes, brindando siempre una atención responsable y de calidad para el bienestar de cada mascota.
+                                </p>
+                                <!-- BOTÓN -->
+                                <a class="service-button" href="assets/pages/nosotros.html">Conoce más</a>
+                            </div>
+                        </div> <!-- Fin de Tarjeta 2 -->
+                    </div> <!-- Flexbox hijo 2 -->
+
+
+                </div> <!--fin del Flexbox padre -->
+            </div> <!-- Fin del container -->
+
+        </section>
+
+
+        <!-- -------------------- -->
+        <!-- Comentario nuestros clientes -->
+        <section id="clientes" class="padding-xl">
+            <div class="container">
+                <h2 class="titulo-seccion">Comentario de nuestros clientes</h2>
+                <div class="dots dots-purpple dots-center">
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+
+                <!-- Flexbox padre -->
+                <div class="row">
+
+                    <!-- Flexbox hijo 1 -->
+                    <div class="col">
+                        <!-- Tarjeta 1 -->
+                        <div class="cliente-card">
+                            <!-- IMÁGEN DENTRO DEL CARD -->
+                            <img class="img-fluid" src="assets/img/cliente1.jpg" alt="">
+                            <!-- CAJA QUE CONTIENE TODO EL CONTENIDO DEL CARD -->
+                            <div class="card-container-cliente">
+                                <!-- CARGO DEL PROFESIONAL -->
+                                <h2 class="cliente">Cliente 1</h2>
+                                <!-- NOMBRE DEL PROFESIONAL -->
+                                <h2 class="cliente-nombre">Lisette De la Plata</h2>
+                                <div class="stars stars-small">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <!-- TEXTO BIOGRÁFICO -->
+                                <p class="cliente-descripcion">
+                                    La atención en Vet Health fue excelente desde el primer momento. 
+                                    Los doctores trataron a mi mascota con mucho cuidado y profesionalismo, brindándome confianza y tranquilidad durante toda la consulta.
+                                </p>
+                            </div>
+                        </div> <!-- Fin de Tarjeta 1 -->
+                    </div> <!--fin del Flexbox hijo 1 -->
+
+                    <!-- Flexbox hijo 2 -->
+                    <div class="col">
+                        <!-- Tarjeta 1 -->
+                        <div class="cliente-card">
+                            <!-- IMÁGEN DENTRO DEL CARD -->
+                            <img class="img-fluid" src="assets/img/cliente2.jpg" alt="">
+                            <!-- CAJA QUE CONTIENE TODO EL CONTENIDO DEL CARD -->
+                            <div class="card-container-cliente">
+                                <!-- CARGO DEL PROFESIONAL -->
+                                <h2 class="cliente">Cliente 2</h2>
+                                <!-- NOMBRE DEL PROFESIONAL -->
+                                <h2 class="cliente-nombre">Fernando Zapata</h2>
+                                <div class="stars stars-small">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <!-- TEXTO BIOGRÁFICO -->
+                                <p class="cliente-descripcion">
+                                    En Vet Health encontré un servicio veterinario muy completo y responsable. 
+                                    El personal fue amable en todo momento y mi mascota recibió una atención rápida, segura y de gran calidad profesional.
+                                </p>
+                            </div>
+                        </div> <!-- Fin de Tarjeta 1 -->
+                    </div> <!--fin del Flexbox hijo 1 -->
+
+                    <!-- Flexbox hijo 3 -->
+                    <div class="col">
+                        <!-- Tarjeta 1 -->
+                        <div class="cliente-card">
+                            <!-- IMÁGEN DENTRO DEL CARD -->
+                            <img class="img-fluid" src="assets/img/cliente3.jpg" alt="">
+                            <!-- CAJA QUE CONTIENE TODO EL CONTENIDO DEL CARD -->
+                            <div class="card-container-cliente">
+                                <!-- CARGO DEL PROFESIONAL -->
+                                <h2 class="cliente">Cliente 3</h2>
+                                <!-- NOMBRE DEL PROFESIONAL -->
+                                <h2 class="cliente-nombre">Ernesto Reyes</h2>
+                                <div class="stars stars-small">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <!-- TEXTO BIOGRÁFICO -->
+                                <p class="cliente-descripcion">
+                                    Mi experiencia en Vet Health fue realmente muy positiva. 
+                                    El equipo médico mostró mucha dedicación y cariño hacia mi mascota, ofreciendo siempre una atención eficiente y un trato muy humano.
+                                </p>
+                            </div>
+                        </div> <!-- Fin de Tarjeta 1 -->
+                    </div> <!--fin del Flexbox hijo 1 -->
+
+                </div> <!--fin del Flexbox padre -->
+            </div> <!-- Fin del container -->
+
+        </section>
+
+        <!-- Sección de video -->
+        <section id="Video">
+            <video class="video-fluid" muted autoplay loop>
+                <source src="assets/video/video1.mp4" type="video/mp4">
+            </video>
+        </section>
+
+
+        <!-- Consulta la especialidad -->
+        <section id="especialidad">
+            <div class="container">
+                
+            </div>
+            <!-- LADO IZQUIERDO -->
+            <div class="left">
+                <p class="subtitulo">CONSULTA DE ESPECIALIDAD</p>
+                <h2 class="titulo">
+                    Los mejores especialistas están al servicio de tu mascota
+                </h2>
+                <div class="dots dots-small dots-white dots-left dots-especialidad">
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+            </div>
+
+            <!-- LADO DERECHO -->
+            <div class="right">
+
+                <!-- COLUMNA 1 -->
+                <div class="col">
+                    <div class="item">
+                        <h3>Oncología</h3>
+                        <p>Dr. Mario Verano</p>
+                    </div>
+
+                    <div class="item">
+                        <h3>Fisioterapia</h3>
+                        <p>Dra. Luccia Carpio</p>
+                    </div>
+
+                    <div class="item">
+                        <h3>Neurología</h3>
+                        <p>Dr. Luis Ramos</p>
+                    </div>
+
+                    <div class="item">
+                        <h3>Traumatología</h3>
+                        <p>Dr. Luis Ramos</p>
+                    </div>
+
+                    <div class="item">
+                        <h3>Odontología</h3>
+                        <p>Dr. Jorge Hun</p>
+                    </div>
+                </div>
+
+                <!-- COLUMNA 2 -->
+                <div class="col">
+                    <div class="item">
+                        <h3>Oftalmología</h3>
+                        <p>Dra. Roxana Padilla</p>
+                    </div>
+
+                    <div class="item">
+                        <h3>Felinos</h3>
+                        <p>Dra. Lizette Ampuero</p>
+                    </div>
+
+                    <div class="item">
+                        <h3>Cardiología</h3>
+                        <p>Dr. Juan Diego Asencios</p>
+                    </div>
+
+                    <div class="item">
+                        <h3>Nutrición y Gastroenterología</h3>
+                        <p>Dr. Alonso Manrique</p>
+                    </div>
+
+                    <div class="item">
+                        <h3>Dermatología</h3>
+                        <p>Dr. Renzo Venturo</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Nuestros servicios -->
+        <section id="servicios" class="padding-xl">
+            <div class="container">
+                <h2 class="titulo-seccion">Nuestros servicios</h2>
+                <div class="dots dots-purpple dots-center">
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+                <div class="servicios-row">
+
+                    <div class="servicio-card">
+                        <div class="servicio-icon icon-blue">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <div class="servicio-text">
+                            <h3>Consultas de especialidad</h3>
+                            <p>Consulta médica veterinaria con los mejores especialistas de todo el Perú siempre
+                                dispuestos a dar todo por la salud de tu mascota.</p>
+                        </div>
+                    </div>
+
+                    <div class="servicio-card">
+                        <div class="servicio-icon icon-orange">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="servicio-text">
+                            <h3>Tienda para mascotas</h3>
+                            <p>Tenemos la mejor y más variada tienda de artículos para mascotas de toda Lima.</p>
+                        </div>
+                    </div>
+
+                    <div class="servicio-card">
+                        <div class="servicio-icon icon-pink">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+                        <div class="servicio-text">
+                            <h3>Peluquería para mascotas</h3>
+                            <p>Cuidamos el aspecto y la salud de tu engreído haciendo uso de productos de la más alta
+                                calidad.</p>
+                        </div>
+                    </div>
+
+                    <div class="servicio-card">
+                        <div class="servicio-icon icon-green">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="servicio-text">
+                            <h3>Cirugías</h3>
+                            <p>Cirugía veterinaria en las más modernas instalaciones y con los cirujanos más
+                                experimentados.</p>
+                        </div>
+                    </div>
+
+                    <div class="servicio-card">
+                        <div class="servicio-icon icon-yellow">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <div class="servicio-text">
+                            <h3>Internamientos de última generación</h3>
+                            <p>Área de internados de última generación y el mejor personal dedicado las 24 horas al
+                                cuidado tu mascota.</p>
+                        </div>
+                    </div>
+
+                    <div class="servicio-card">
+                        <div class="servicio-icon icon-lightblue">
+                            <i class="fa-solid fa-eye-dropper"></i>
+                        </div>
+                        <div class="servicio-text">
+                            <h3>Laboratorio</h3>
+                            <p>Disponemos de los mejores analistas y el más moderno laboratorio de muestras.</p>
+                        </div>
+                    </div>
+        </section>
+
+        <!--Sección de tarifas -->
+        <section id="tarifas" class="padding-xl">
+            <div class="container">
+                <h2>Tarifa de servicios</h2>
+
+                <!-- Objeto tabla -->
+                <table class="tbl-tarifas">
+                    <caption>Catálogo de precios:</caption>
+
+                    <!-- Cabecera de tabla -->
+                    <thead>
+                        <tr>
+                            <th>Detalles del servicio</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <!-- Cuerpo de tabla  -->
+                    <tbody>
+                        <tr>
+                        <td>Consulta de especialidad</td>
+                        <td>Se realiza una consulta privada con el médico.</td>
+                        <td>S/ 150.00</td>
+                    </tr>
+                    <tr>
+                        <td>Peluquería de mascotas</td>
+                        <td>Se realiza un baño completo y corte de pelaje.</td>
+                        <td>S/ 80.00</td>
+                    </tr>
+                    <tr>
+                        <td>Internamientos de última generación</td>
+                        <td>Atención completa a la mascota dentro de cuidados intensivos.</td>
+                        <td>S/ 200.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tienda para mascotas</td>
+                        <td>Juguetes, ropa, medicina.</td>
+                        <td>S/ 50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cirugías</td>
+                        <td>Se realiza cirugía general.</td>
+                        <td>S/ 250.00</td>
+                    </tr>
+                    <tr>
+                        <td>Laboratorio</td>
+                        <td>Análisis en laboratorio.</td>
+                        <td>S/ 125.00</td>
+                    </tr>
+                    </tbody>
+                    <!-- Pie de tabla  -->
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">(*) PRECIOS ACTUALES 19/04/2026</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </section>
+
+        <!-- Apartado: Necesitas ayuda? -->
+        <section id="ayuda" class="padding-xl">
+            <div class="container">
+                <div class="ayuda-layout">
+                    <div class="ayuda-content">
+                        <h2 >¿Necesitas ayuda?</h2>
+                        <div class="help-text">
+                            <p>
+                                Puedes comunicarte con nosotros a través de Whatsapp
+                                para resolver tus dudas, agendar una cita o recibir
+                                orientación profesional para el cuidado de tu mascota.
+                                Estamos disponibles para ayudarte cuando más lo necesites.
+                            </p>
+
+                        </div>
+                        <!-- <p>Puedes escribirnos a nuestro Whatsapp con alguna inquietud que tengas o para hacernos llegar tus sugerencias.</p> -->
+                        <a target="_blank" href="https://wa.me/51920800123" class="btn">Contáctanos<i
+                                class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.5447818376524!2d-77.05735475263519!3d-12.005968657966248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf03c778329d%3A0x8e1092cb6012ac7!2sAv%20Los%20Ficus%2C%20Independencia%2015333!5e0!3m2!1ses-419!2spe!4v1779595318380!5m2!1ses-419!2spe"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="contact-form" class="padding-xl">
+            <div class="container">
+                <h2>Contáctanos</h2>
+
+                <!-- Creación del formulario -->
+                <form action="#" method="POST">
+                    <div>
+                        <div>
+                            <input class="form-control" type="text" placeholder="Nombre" required minlength="3">
+                        </div>
+                        <div>
+                            <input class="form-control" type="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div>
+                            <input class="form-control" type="tel" placeholder="Teléfono" pattern="[0-9]{9}" maxlength="9" inputmode="numeric">
+                        </div>
+                        <div>
+                            <input class="form-control" type="text" placeholder="Asunto" required>
+                        </div>
+                        <div>
+                            <textarea class="form-control form-control-noresize" placeholder="Mensaje" rows="6" required></textarea>
+                        </div>
+                        <div>
+                            <input class="form-control" type="text" placeholder="¿Eres humano?" required>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="acepto" required>
+                            <label for="acepto">He leído y acepto los
+                                <a class="form-link" target="_blank"
+                                    href="https://www.utp.edu.pe/web/politicas-privacidad">términos y condiciones</a>
+                                respecto al tratamiento y privacidad
+                                de mis datos personales.
+                            </label>
+                        </div>
+                        <div>
+                            <button class="form-submit" type="submit"> <i class="fa-solid fa-paper-plane"></i>  
+                                Enviar mensaje</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="footer" class="padding-xl">
+        <div class="container-footer">
+            <div class="footer-row">
+
+                <div class="footer-links">
+                    <h4>Compañia</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="assets/pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="assets/pages/servicios.html">Servicios</a></li>
+                        <li><a href="assets/pages/especialidades.html">Especialidades</a></li>
+                        <li><a href="assets/pages/politica.html">Política de privacidad</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://maps.google.com/?q=Av+Los+Ficus+684+Independencia">
+                                <i class="fa-regular fa-hospital"></i>
+                                Av. Los Ficus, Independencia
+                            </a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="tel:+51920800123">
+                                <i class="fa-solid fa-phone"></i>
+                                Central: (+51) 920 800 123
+                            </a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="https://wa.me/51920800123">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Admisión: (+51) 920 800 123
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="footer-links">
+                    <div class="social-link">
+                        <a target="_blank" href="https://www.facebook.com/galenoveterinaria/"><i class="fab fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/veterinaria_galeno/"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://x.com/IMVeterinaria"><i class="fab fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                        <a target="_blank" href="https://www.tiktok.com/@.vidasana0"><i class="fab fa-tiktok"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="claim-book">
+
+            <a target="_blank" href="https://librodereclamaciones.utp.edu.pe/">Libro de Reclamaciones</a><i class="fa-solid fa-book-open"></i>
+
+        </div>
+
+        <div class="footer-bottom ">
+            <p> &copy; 2026 VetHealth - Todos los derechos reservados </p>
+            <p>Hecho con <span>❤</span> por <b>NOSOTROS</b></p>
+        </div>
+        <footer>
+
+        <!-- Botón de scroll-up -->
+        <a class="scroll-up" href="#">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+
+        <!-- Enlazar el HTML con JavaScript -->
+        <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
