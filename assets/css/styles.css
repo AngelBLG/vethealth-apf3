@@ -898,11 +898,11 @@
   /* ----------------- */
   /* APARTADO BANNER   */
   /* ----------------- */
-  .banner-text {
+.banner-text {
     position: absolute;
-    top: 50%;
+    top: 30%; /* Regresamos al 50% matemático */
     left: 10%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /* El ancla perfecta */
     color: var(--Color4);
     width: 55%;
     margin: 0;
