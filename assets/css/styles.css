@@ -1608,48 +1608,6 @@
       /* Fin apartado */
   }
 
-  /* ========================================= */
-      /* MENÚ HAMBURGUESA PARA TABLETS Y CELULARES */
-      /* ========================================= */
-      
-      .nav-menu-toggle {
-        display: block; /* Muestra el icono hamburguesa */
-      }
-
-      .nav-menu {
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 240px;
-        background-color: var(--Color10);
-        padding: 1rem;
-        border-radius: 12px;
-        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
-        
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-12px);
-        transition: all 0.3s ease-in-out;
-
-        max-height: 75vh;
-        overflow-y: auto;
-      }
-
-      .nav-menu-link {
-        border-radius: 8px;
-        padding: 12px;
-        border-bottom: 1px solid var(--Color2);
-        text-align: center; /* Centramos el texto del menú */
-      }
-
-      .nav-menu.active {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-      }
-
   /* -------------------------------------------------------------- */
   /* DISEÑO RESPONSIVE PARA TABLET (POSICIÓN VERTICAL)*/
   /* -------------------------------------------------------------- */
@@ -1951,6 +1909,50 @@
       font-size: 40px;
     }
     /* Fin apartado */
+
+    
+  /* ========================================= */
+      /* MENÚ HAMBURGUESA PARA TABLETS Y CELULARES */
+      /* ========================================= */
+      
+      .nav-menu-toggle {
+        display: block; /* Muestra el icono hamburguesa */
+      }
+
+      .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 240px;
+        background-color: var(--Color10);
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-12px);
+        transition: all 0.3s ease-in-out;
+
+        max-height: 75vh;
+        overflow-y: auto;
+      }
+
+      .nav-menu-link {
+        border-radius: 8px;
+        padding: 12px;
+        border-bottom: 1px solid var(--Color2);
+        text-align: center; /* Centramos el texto del menú */
+      }
+
+      .nav-menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
 
   }
   /* --------------------------------------------------- */
