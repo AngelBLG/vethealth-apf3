@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viendo transmisión... - YangelTV</title>
+    <style>
+        body, html { 
+            margin: 0; padding: 0; width: 100%; height: 100%; 
+            background: #000000; overflow: hidden; 
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        
+        #contenedor-video { 
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw; 
+            height: 100vh;
+            height: -webkit-fill-available; /* Truco vital para Safari y móviles Android */
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            overflow: hidden;
+        }
+
+        /* ESTO FORZA AL VIDEO A ADAPTARSE A LA PANTALLA DEL CELULAR SIN CORTARSE */
+        #contenedor-video iframe {
+            width: 100% !important;
+            height: 100% !important;
+            border: none;
+            display: block;
+        }
+        
+        /* BOTÓN MEJORADO: Ahora tiene transición de opacidad y sombra para que no se pierda */
+        .boton-volver {
+            position: absolute; top: 20px; left: 20px; z-index: 9999;
+            background: rgba(18, 21, 38, 0.9); color: white; 
+            padding: 12px 24px; border: 2px solid #202640; 
+            border-radius: 10px; text-decoration: none; font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+            transition: opacity 0.4s ease, transform 0.2s ease, border-color 0.2s ease;
+            opacity: 1; /* Visible por defecto */
+        }
+        
+        /* Cuando pasas el control o el mouse por encima del botón */
+        .boton-volver:hover, .boton-volver:focus { 
+            border-color: #00ffff; background: #000000; transform: scale(1.05); outline: none;
+            opacity: 1 !important; /* Fuerza a que se vea si estás sobre él */
+        }
+
+        /* Esta clase se la pondrá JavaScript a los 3 segundos para esconderlo */
+        .botton-oculto {
+            opacity: 0;
+            pointer-events: none; /* Para que al hacer clic no le des al botón invisible */
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" id="btn-volver" class="boton-volver" tabindex="0">← Volver al Menú</a>
+
+    <div id="contenedor-video">
+        <div style="color:#9ba1b0; font-size:1.5rem;">Cargando señal...</div>
+    </div>
+
+    <script src="canales.js"></script>
+    <script>
+        // 1. Lógica para cargar el reproductor
+        const parametros = new URLSearchParams(window.location.search);
+        const idCanal = parametros.get('id');
+        const contenedor = document.getElementById('contenedor-video');
+        
+        if (idCanal && baseDeDatosCanales[idCanal]) {
+            contenedor.innerHTML = baseDeDatosCanales[idCanal].iframe;
+            document.title = baseDeDatosCanales[idCanal].nombre + " - YangelTV";
+        } else {
+            contenedor.innerHTML = '<h2 style="color:#ff4a4a;">❌ Error: Canal no encontrado en la base de datos</h2>';
+        }
+
+        // 2. LÓGICA ESTILO NETFLIX: Ocultar el botón después de 3 segundos de inactividad
+        const boton = document.getElementById('btn-volver');
+        let temporizador;
+
+        function reiniciarTemporizador() {
+            // Mostrar el botón inmediatamente cuando el usuario se mueve o usa el control
+            boton.classList.remove('botton-oculto');
+            
+            // Limpiar el conteo anterior
+            clearTimeout(temporizador);
+            
+            // Iniciar un nuevo conteo de 3 segundos (3000 milisegundos)
+            temporizador = setTimeout(() => {
+                boton.classList.add('botton-oculto');
+            }, 3000);
+        }
+
+        // Escuchar si el usuario mueve el mouse o presiona una tecla del control remoto
+        window.addEventListener('mousemove', reiniciarTemporizador);
+        window.addEventListener('keydown', reiniciarTemporizador);
+
+        // Iniciar el temporizador apenas entra a la página
+        reiniciarTemporizador();
+    </script>
+</body>
+</html>
