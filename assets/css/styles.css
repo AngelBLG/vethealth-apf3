@@ -31,6 +31,8 @@
     --spacing: 1.8;
   }
 
+
+
   /* Selector Universal de elementos */
   * {
     /* Elimina los espacios predeterminados */
@@ -101,7 +103,40 @@
     color: var(--Color6);
   }
 
+  #contactanos-info h2{
+margin-top:45px;
+margin-bottom:25px;
+
+}
+
+#contactanos-info h2{
+color:var(--Color3);
+font-size:34px;
+font-weight:700;
+
+}
+
+#contactanos-info p{
+font-size:17px;
+line-height:1.9;
+color:var(--Color5);
+
+}
+
+#contactanos-info strong{
+
+font-size:18px;
+
+}
+
   /* Puntos */
+
+  .contact-info{
+   line-height:2.2;
+   font-size:18px;
+
+}
+
   .dots{
     display: flex;
     gap: 8px;
@@ -223,12 +258,27 @@
     color: var(--Color1);
   }
 
+  
+
   #servicios h2 {
     /*TITULO: NUESTROS SERVICIOS */
     text-align: center;
     font-size: 70px;
     color: var(--Color6);
   }
+
+  #servicios-info h1{
+    margin-bottom:30px;
+}
+
+#servicios-info h2{
+    margin-top:45px;
+    margin-bottom:20px;
+}
+
+#servicios-info p{
+    line-height:1.9;
+}
 
   /* Flexbox padre para agrupar las tarjetas */
   .servicios-row {
@@ -1345,6 +1395,7 @@
     margin: auto;
   }
   /* Fin apartado */
+
   }
 
  /* -------------------------------------------------------------- */
@@ -1607,6 +1658,7 @@
       }
       /* Fin apartado */
   }
+
 
   /* -------------------------------------------------------------- */
   /* DISEÑO RESPONSIVE PARA TABLET (POSICIÓN VERTICAL)*/
@@ -1910,8 +1962,8 @@
     }
     /* Fin apartado */
 
-    
-  /* ========================================= */
+
+      /* ========================================= */
       /* MENÚ HAMBURGUESA PARA TABLETS Y CELULARES */
       /* ========================================= */
       
@@ -1952,8 +2004,6 @@
         visibility: visible;
         transform: translateY(0);
       }
-
-
   }
   /* --------------------------------------------------- */
   /* DISEÑO RESPONSIVO PARA CELULAR (POSICIÓN VERTICAL) */
@@ -2204,24 +2254,146 @@
   /* PÁGINAS INTERNAS */
   /* ------------------- */
 
-/* PÁGINAS INTERNAS DE TEXTO */
-  #politica .container,
+  /* PÁGINAS INTERNAS (PI) DE TEXTO */
   #nosotros-info .container,
   #equipo-info .container,
   #especialidades-info .container,
   #servicios-info .container,
+  #politica .container {
+    width:85%;
+    max-width:1100px;
+  }
+
+  #servicios-info .container,
+  #servicios-info h1{
+    text-align: left;
+  }
+
   #contactanos-info .container {
     width: 85%;
     margin: auto;
+    max-width:1100px;
   }
 
-  #politica,
-  #nosotros-info,
-  #equipo-info,
-  #especialidades-info,
-  #servicios-info,
+  /* PI. POLÍTICA DE PRIVACIDAD */
+  #politica {
+    padding-top: 25px;
+    padding-bottom:25px;
+  }
+
+  #politica h1{ 
+    margin-bottom:30px;
+  }
+
+  #politica h2 {
+    font-size:24px;
+    margin-top:45px;
+    margin-bottom:20px;
+  }
+
+  #politica p{
+    line-height:1.9;
+    margin-bottom:18px;
+  }
+
+  /*PI. Nosotros*/
+  #nosotros-info {
+    background:var(--Color11);
+    padding-top: 25px;
+    padding-bottom:25px;
+    margin: auto;
+  }
+
+  #nosotros-info h1{
+    margin-bottom:30px;
+  }
+
+  #nosotros-info h2{
+    color:var(--Color3);
+    font-size:34px;
+    margin-top:45px;
+    margin-bottom:20px;
+  }
+
+  #nosotros-info p{
+    line-height:1.9;
+  }
+
+  /* PI. EQUIPO */
+  #equipo-info{
+    background:var(--Color11);
+    padding-top: 25px;
+    padding-bottom:25px
+  }
+
+  #equipo-info h2 {
+    font-size: 34px;
+  }
+  #equipo-info h1{
+    margin-bottom:30px;
+  }
+
+  #equipo-info h2{
+    color:var(--Color3);
+    margin-top:45px;
+    margin-bottom:20px;
+  }
+
+  #equipo-info p{
+    line-height:1.9;
+  }
+
+  /* PI. ESPECIALIDADES */
+  #especialidades-info{
+    background:var(--Color11);
+    padding-top:25px;
+    padding-bottom:25px;
+  }
+
+  #especialidades-info h1{
+    margin-bottom:30px;
+  }
+
+  #especialidades-info h2{
+    color:var(--Color3);
+    font-size:34px;
+    margin-top:45px;
+    margin-bottom:20px;
+  }
+
+  #especialidades-info p{
+    line-height:1.9;
+  }
+
+  /* PI. SERVICIOS */
+  #servicios-info{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  #servicios-info h1 {
+    text-align: center;
+  }
+
+  #servicios-info h2{
+    color:var(--Color3);
+    font-size:34px;
+  }
+
+  #servicios-info {
+    text-align: center;
+  }
+
+  /* PI. CONTÁCTANOS */
   #contactanos-info {
+    text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  /* FIN PÁGINA */
+
+  #contactanos-info p {
+    color: var(--Color1);
+  }
+
+  /* FIN PÁGINAS INTERNAS */

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- Enlazar el HTML con el favicon (icóno de la pestaña) -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
     <!-- Enlazar HTML con fuentes externas de Google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,6 +67,14 @@
                         <!-- X (Twitter) -->
                         <a target="_blank" href="https://x.com/IMVeterinaria">
                             <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <!-- YT (YouTube) -->
+                        <a target="_blank" href="https://www.youtube.com/">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <!-- Ln (Linkedin) -->
+                        <a target="_blank" href="https://pe.linkedin.com/">
+                            <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </div> <!-- Fin del topbar social -->
                 </div> <!-- Fin del topbar container -->
@@ -602,25 +610,25 @@
                 <h2>Contáctanos</h2>
 
                 <!-- Creación del formulario -->
-                <form action="#" method="POST">
+                <form action="" method="POST">
                     <div>
                         <div>
-                            <input class="form-control" type="text" placeholder="Nombre" required minlength="3">
+                            <input class="form-control" type="text" placeholder="Nombre" required minlength="3" maxlength="50">
                         </div>
                         <div>
-                            <input class="form-control" type="email" placeholder="Correo electrónico" required>
+                            <input class="form-control" type="email" placeholder="Correo electrónico" required maxlength="100">
                         </div>
                         <div>
-                            <input class="form-control" type="tel" placeholder="Teléfono" pattern="[0-9]{9}" maxlength="9" inputmode="numeric">
+                            <input class="form-control" type="tel" placeholder="Teléfono" pattern="[0-9]{9}" maxlength="9" inputmode="numeric" required>
                         </div>
                         <div>
-                            <input class="form-control" type="text" placeholder="Asunto" required>
+                            <input class="form-control" type="text" placeholder="Asunto" required maxlength="50">
                         </div>
                         <div>
-                            <textarea class="form-control form-control-noresize" placeholder="Mensaje" rows="6" required></textarea>
+                            <textarea class="form-control form-control-noresize" placeholder="Mensaje" rows="6" required maxlength="500"></textarea>
                         </div>
                         <div>
-                            <input class="form-control" type="text" placeholder="¿Eres humano?" required>
+                            <input class="form-control" type="text" placeholder="¿Eres humano?" required maxlength="2">
                         </div>
                         <div>
                             <input type="checkbox" id="acepto" required>
@@ -692,6 +700,8 @@
                         <a target="_blank" href="https://x.com/IMVeterinaria"><i class="fab fa-twitter"></i></a>
                         <a target="_blank" href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
                         <a target="_blank" href="https://www.tiktok.com/@.vidasana0"><i class="fab fa-tiktok"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        <a target="_blank" href="https://pe.linkedin.com/"><i class="fab fa-linkedin"></i></a>
                     </div>
 
                 </div>
